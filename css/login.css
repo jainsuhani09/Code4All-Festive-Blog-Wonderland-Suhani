@@ -1,0 +1,67 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #fff;
+}
+body{
+    background-image: url(pier-lake-hallstatt-austria.jpg) ;
+    background-size: 100% 740px;
+    font-family: 'montserrat';
+
+
+}
+
+.container{
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-left: 36%;
+    margin-top: 7%;
+}
+.container h1{
+    font-size: 36px;
+    color: aqua;
+}
+.container .text{
+    position: relative;
+    top: 7%;
+}
+.inp1{
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid white;
+    width: 250px;
+    font-size: 20px;
+    margin-top: 40px;
+    outline: none;
+    color: white;
+}
+.text button{
+    width: 250px;
+    height: 44px;
+    background-color: aqua;
+    color: black;
+    border: none;
+    font-size: 24px;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+button:hover{
+    border: 3px solid aqua;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+
+}
+p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+p span{
+    color: aqua;
+}

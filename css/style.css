@@ -1,0 +1,251 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #fff;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #95c11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+#cursor-blur{
+    height: 500px;
+    width: 500px;
+    background-color: #96c11e2b;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 9;
+}
+#nav{
+    height: 145px;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    gap: 50px;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 99;
+}
+
+#nav img{
+    height: 75px;
+}
+#nav a{
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+#page1 h1{
+    font-size: 100px;
+    font-weight: 900;
+    position: relative;
+}
+#page1 h1::before{
+    content:"CODE4ALL CLUB";
+    position: absolute;
+    color: #000;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 2px #95c11e;
+    z-index: -1;
+}
+#page1 h2{
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#page1 p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 40% ;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+#scroller{
+   /* background-color: red;*/
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    transition: all linear 0.5s;
+    animation-iteration-count: infinite;
+    font-size: 100px;
+}
+#scroller h4{
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: gilroy;
+    margin: 10px;
+    color: transparent;
+    -webkit-text-stroke: 2px #95c11e;
+}
+#scroller h4:hover{
+    color: #95c11e;
+}
+@keyframes scroll{
+      from{
+        transform: translateX(0);
+      }
+      to{
+        transform: translateX(-100%);
+      }
+}
+#about-us{
+    height: 40vh;
+    width: 100%;
+   /* background-color: red;*/
+    display: flex;
+    padding: 0 50px;
+    position: relative;
+    align-items: center;
+    z-index: 10;
+    justify-content: space-around;
+}
+#about-us img{
+       height: 300px;
+       width: 300px;
+       border-radius: 50px;
+       object-fit: cover;
+}
+#about-us-in{
+    width: 60%;
+    text-align: center;
+}
+#about-us-in h3{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+#about-us-in p{
+    font-size: 20px;
+    line-height: 26px;
+}
+#why{
+    height: 40vh;
+    width: 100%;
+   /* background-color: red;*/
+    display: flex;
+    padding: 0 50px;
+    position: relative;
+    align-items: center;
+    z-index: 10;
+    justify-content: space-around;
+}
+#why img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+#why-important{
+    width: 60%;
+    text-align: center;
+}
+#why-important h3{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+#why-important p{
+    font-size: 20px;
+    line-height: 26px;
+}
+#motto{
+    height: 40vh;
+    width: 100%;
+   /* background-color: red;*/
+    display: flex;
+    padding: 0 50px;
+    position: relative;
+    align-items: center;
+    z-index: 10;
+    justify-content: space-around;
+}
+#motto-in{
+    width: 50%;
+    text-align: center;
+}
+#motto img{
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+#motto-in h3{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+#motto-in p{
+    font-size: 20px;
+    line-height: 26px;
+}
+.card{
+    float: left;
+    width: 50%;
+    padding: 3px;
+}
+.card img{
+    height: 500px;
+}
+.card-container{
+    content: "";
+    display: table;
+    clear: both;
+
+}
