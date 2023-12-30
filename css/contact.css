@@ -1,12 +1,16 @@
-body{
-    background-color: #000;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 h1{
     font-size: 30px;
-    color: #fff;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    color: #fff;
+
 }
 .image{
     align-items: center;
@@ -14,23 +18,104 @@ h1{
     display: block;
     margin-left: auto;
     margin-right: auto;
+
 }
-.main{
-    width: 100%;
+body{
+    background-image: url(../images/OIP.jpeg) ;
+}
+.container{
     height: 100vh;
-    display: block;
+   /* background: #08071d;*/
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    align-items: center;
     justify-content: center;
-    background-color: #000;
+    /*align-items: center;*/
+}
+.container form{
+    width:  670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px  50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: #833ab4;
+    backdrop-filter: blur(10px) ;
+    flex-wrap: wrap;
+
+}
+.container form h1{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+.container form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+.container form input::placeholder{
+    color: #ddd;
+}
+.container form #LastName,
+.container form #Mobile{
+    margin-left: 20px;
+}
+.container form h4{
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+.container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+textarea::-webkit-scrollbar{
+    width: 1em;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(194,194,194,0.713);
+}
+.container form #button{
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.container form #button:hover{
+    opacity: 0.7;
 }
 .icon{
     width: 100px;
     height: 100px;
     border-radius: 100px;
-    color: #fff;
     background: #fff;
     margin: 20px;
     text-align: center;
@@ -40,6 +125,19 @@ h1{
     overflow: hidden;
     box-shadow: 5px 10px 20px rgba(150,150,150,.3);
     transition: all .3s ease-out;
+
+}
+.main{
+    height: 100vh;
+    width: 100%;
+   /* background-color: red;*/
+    display: flex;
+    justify-content: center;
+   /* background-color: rgb(240,240,240)*/;
+   height: 40vh;
+    width: 100%;
+   /* background-color: red;*/
+    
 
 }
 body a{
@@ -60,17 +158,17 @@ body a{
 .icon:hover i{
     color: #fff;
 }
-.icon .fa-x-twitter{
-   color: #1da1f2;
-}
-.twt:hover{
-    background: #1da1f2;
-}
 .icon .fa-linkedin-in{
     color: #0077B5;
 }
 .lnk:hover {
      background-color: #0077B5;
+}
+.icon .fa-whatsapp{
+    color: #005c29;
+}
+.wht:hover{
+    background-color: #005c29 ;
 }
 .icon .fa-github{
     color: #000;
@@ -85,8 +183,14 @@ body a{
     background-color:#833ab4;
 }
 .icon .fa-envelope{
-    color: rgb(61, 87, 149);
+    color: #4078c0;
 }
 .eml:hover{
-   background-color: rgb(61, 87, 149) ;
+   background-color: #4078c0 ;
+}
+@media only screen and (min-width: 320px) and 
+(max-width: 991px) {
+    .main{
+        flex-direction: column;
+    }
 }
