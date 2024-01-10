@@ -7,6 +7,11 @@
     box-sizing: border-box;
 
 }
+body{
+    background-image: url(../images/rodion-kutsaiev-8P-uQaTd8rw-unsplash.jpg) ;
+    background-size: 100% 740px;
+    font-family: 'montserrat';
+}
 a{
     text-decoration: none;
 }
@@ -28,6 +33,8 @@ body{
 }
 .blog-heading span{
     color: #f33c3c;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 .blog-heading h3{
     font-size: 2.4rem;
